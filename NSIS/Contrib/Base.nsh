@@ -77,10 +77,19 @@ AllowRootDirInstall true
   Section ""
   
     Call zip2exe.SetOutPath
-  
+
 !macroend
 
 !macro SECTION_END
+
+    !if "${ZIP2EXE_NAME}" = "eTodo"       
+       SetOutPath "$INSTDIR\eTodo\bin"
+       ReadEnvStr $R0 "SystemDrive"
+       ReadEnvStr $R1 "USERNAME"
+       CreateShortCut "$DESKTOP\eTodo.lnk" "$INSTDIR\eTodo\bin\erl" '-noshell -detached -mnesia dir "\$\"$R0/Users/$R1/AppData/Roaming/eTodo\$\"" -eLog logDir "\$\"$R0/Users/$R1/AppData/Roaming/eTodo/logs/eLog\$\"" -boot eTodo' "$INSTDIR\eTodo\lib\eTodo-0.9.0\priv\Icons\ETodo.ico" 
+       CreateShortCut "$SMPROGRAMS\eTodo.lnk" "$INSTDIR\eTodo\bin\erl" '-noshell -detached -mnesia dir "\$\"$R0/Users/$R1/AppData/Roaming/eTodo\$\"" -eLog logDir "\$\"$R0/Users/$R1/AppData/Roaming/eTodo/logs/eLog\$\"" -boot eTodo' "$INSTDIR\eTodo\lib\eTodo-0.9.0\priv\Icons\ETodo.ico" 
+       AccessControl::GrantOnFile "$INSTDIR\eTodo" "(S-1-5-32-545)" "FullAccess"
+    !endif
 
   SectionEnd
   
