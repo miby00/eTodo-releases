@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ "$1" = configure ]; then
+    echo "Setting up eTodo"
+fi

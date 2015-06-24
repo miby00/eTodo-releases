@@ -1,0 +1,10 @@
+Package: etodo
+Version: 0.9.0
+Section: misc
+Priority: optional
+Architecture: amd64
+Essential: no
+Installed-Size: 33300
+Maintainer: Mikael Bylund <mikael.bylund@dunderbo.nu>
+Description: A P2P task manager written in Erlang.
+Depends: libwxgtk2.8-0

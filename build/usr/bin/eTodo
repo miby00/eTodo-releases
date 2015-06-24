@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd /usr/lib/eTodo/bin
+exec ./erl -noshell -noinput -mnesia dir "\"$HOME/.eTodo\"" -eLog logDir "\"$HOME/.eTodo/logs/eLog\""
+
+

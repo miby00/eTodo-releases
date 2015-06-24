@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=eTodo
+Comment=A taskmanager written in erlang
+Exec=eTodo
+Icon=/usr/lib/eTodo/lib/eTodo-0.9.0/priv/Icons/eTodo.png
+Path=/usr/lib/eTodo/bin
+
+
+
