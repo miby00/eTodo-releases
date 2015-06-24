@@ -1,5 +1,11 @@
 #!/bin/sh
 
 if [ "$1" = configure ]; then
-    echo "Setting up eTodo"
+    # Make directories
+    sudo mkdir -p -m 0777 /usr/lib/eTodo/lib/eTodo-0.9.0/priv/www/linkedFiles
+    sudo mkdir -p -m 0777 /usr/lib/eTodo/lib/eTodo-0.9.0/priv/www/printout
+    # Set correct permissions
+    sudo chmod 0777 /usr/lib/eTodo/lib/eTodo-0.9.0/priv/Icons
+    sudo chmod 0777 /usr/lib/eTodo/lib/eTodo-0.9.0/priv/www/priv/css
+    sudo chmod 0777 /usr/lib/eTodo/lib/eTodo-0.9.0/priv/www/priv/Icons    
 fi
