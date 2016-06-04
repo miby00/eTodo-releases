@@ -9,4 +9,12 @@ The packages are built for the following architectures:
 
 If the packages don't work for you build your own release using the eTodo repository.
 
+Command to build ubuntu package:
+
+dpkg-deb --build build/
+
+On Mac use disk-utils to make a new dmg file.
+
+On Windows NSIS is used to build package from zip file.
+
 
