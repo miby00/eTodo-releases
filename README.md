@@ -15,6 +15,10 @@ dpkg-deb --build build/
 
 On Mac use disk-utils to make a new dmg file.
 
+1. Convert old eTodo.dmg to use no encryption and read/writable.
+2. Copy built release into dmg file.
+3. Convert back to no encryption and compressed.
+
 On Windows NSIS is used to build package from zip file.
 
 
