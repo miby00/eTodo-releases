@@ -7,4 +7,4 @@ Essential: no
 Installed-Size: 33300
 Maintainer: Mikael Bylund <mikael.bylund@dunderbo.nu>
 Description: A P2P task manager written in Erlang.
-Depends: libwxgtk2.8-0
+Depends: libwxgtk3.0-0v5
