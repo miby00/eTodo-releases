@@ -1,10 +1,11 @@
 Package: etodo
-Version: 1.0.0
+Version: 1.0.1
 Section: misc
 Priority: optional
 Architecture: amd64
 Essential: no
 Installed-Size: 33300
 Maintainer: Mikael Bylund <mikael.bylund@dunderbo.nu>
-Description: A P2P task manager written in Erlang.
-Depends: libwxgtk3.0-0v5
+Description: A P2P task manager written in Erlang using wxErlang.
+Depends: procps, libc6, libncurses5, libssl1.0.0 | libssl1.0.2, libgcc1, libstdc++6, libwxbase2.8-0 | libwxbase3.0-0 | libwxbase3.0-0v5, libwxgtk2.8-0 | libwxgtk3.0-0 | libwxgtk3.0-0v5, libsctp1
+Homepage: https://github.com/miby00/eTodo

@@ -2,9 +2,9 @@
 Version=1.0
 Type=Application
 Name=eTodo
-Comment=A taskmanager written in erlang
+Comment=A P2P taskmanager written in erlang using wxErlang
 Exec=eTodo
-Icon=/usr/lib/eTodo/lib/eTodo-1.0.0/priv/Icons/eTodo.png
+Icon=/usr/lib/eTodo/lib/eTodo-1.0.1/priv/Icons/eTodo.png
 Path=/usr/lib/eTodo/bin
 
 
